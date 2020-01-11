@@ -19,7 +19,7 @@ namespace Bacon.Serverless
 
         [FunctionName("bacon-get")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "api/v1/bacon")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "v1/bacon")] HttpRequest req,
             ILogger log)
         {
             return new OkObjectResult(BaconFlavors);
